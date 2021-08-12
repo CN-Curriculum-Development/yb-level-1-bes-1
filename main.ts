@@ -6,12 +6,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Goal, function (sprite, otherSpr
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
-    tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 1))
+    tiles.placeOnTile(player1, tiles.getTileLocation(1, 1))
 })
-let mySprite: Sprite = null
+let player1: Sprite = null
 tiles.setTilemap(tilemap`level2`)
 game.showLongText("Avoid the moving snakes to get to the coin!", DialogLayout.Center)
-mySprite = sprites.create(img`
+player1 = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
     . . . f f f 2 2 2 2 f f f . . . 
@@ -29,51 +29,9 @@ mySprite = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 1))
-controller.moveSprite(mySprite)
-let myEnemy2 = sprites.create(img`
-    . . . . . c c c c c c c . . . . 
-    . . . . c 6 7 7 7 7 7 6 c . . . 
-    . . . c 7 c 6 6 6 6 c 7 6 c . . 
-    . . c 6 7 6 f 6 6 f 6 7 7 c . . 
-    . . c 7 7 7 7 7 7 7 7 7 7 c . . 
-    . . f 7 8 1 f f 1 6 7 7 7 f . . 
-    . . f 6 f 1 f f 1 f 7 7 7 f . . 
-    . . . f f 2 2 2 2 f 7 7 6 f . . 
-    . . c c f 2 2 2 2 7 7 6 f c . . 
-    . c 7 7 7 7 7 7 7 7 c c 7 7 c . 
-    c 7 1 1 1 7 7 7 7 f c 6 7 7 7 c 
-    f 1 1 1 1 1 7 6 f c c 6 6 6 c c 
-    f 1 1 1 1 1 1 6 6 c 6 6 6 c . . 
-    f 6 1 1 1 1 1 6 6 6 6 6 6 c . . 
-    . f 6 1 1 1 1 1 6 6 6 6 c . . . 
-    . . f f c c c c c c c c . . . . 
-    `, SpriteKind.Enemy)
-tiles.placeOnTile(myEnemy2, tiles.getTileLocation(3, 3))
-myEnemy2.setVelocity(0, 50)
-myEnemy2.setBounceOnWall(true)
-myEnemy2 = sprites.create(img`
-    . . . . . c c c c c c c . . . . 
-    . . . . c 6 7 7 7 7 7 6 c . . . 
-    . . . c 7 c 6 6 6 6 c 7 6 c . . 
-    . . c 6 7 6 f 6 6 f 6 7 7 c . . 
-    . . c 7 7 7 7 7 7 7 7 7 7 c . . 
-    . . f 7 8 1 f f 1 6 7 7 7 f . . 
-    . . f 6 f 1 f f 1 f 7 7 7 f . . 
-    . . . f f 2 2 2 2 f 7 7 6 f . . 
-    . . c c f 2 2 2 2 7 7 6 f c . . 
-    . c 7 7 7 7 7 7 7 7 c c 7 7 c . 
-    c 7 1 1 1 7 7 7 7 f c 6 7 7 7 c 
-    f 1 1 1 1 1 7 6 f c c 6 6 6 c c 
-    f 1 1 1 1 1 1 6 6 c 6 6 6 c . . 
-    f 6 1 1 1 1 1 6 6 6 6 6 6 c . . 
-    . f 6 1 1 1 1 1 6 6 6 6 c . . . 
-    . . f f c c c c c c c c . . . . 
-    `, SpriteKind.Enemy)
-tiles.placeOnTile(myEnemy2, tiles.getTileLocation(6, 5))
-myEnemy2.setVelocity(0, 50)
-myEnemy2.setBounceOnWall(true)
-let mySprite3 = sprites.create(img`
+tiles.placeOnTile(player1, tiles.getTileLocation(1, 1))
+controller.moveSprite(player1)
+let coin = sprites.create(img`
     . . . b b b . . 
     . . b 5 5 5 b . 
     . b 5 d 3 d 5 b 
@@ -83,9 +41,9 @@ let mySprite3 = sprites.create(img`
     . . f d d d f . 
     . . . f f f . . 
     `, SpriteKind.Goal)
-tiles.placeOnTile(mySprite3, tiles.getTileLocation(8, 6))
+tiles.placeOnTile(coin, tiles.getTileLocation(8, 6))
 animation.runImageAnimation(
-mySprite3,
+coin,
 [img`
     . . b b b b . . 
     . b 5 5 5 5 b . 
@@ -144,5 +102,47 @@ mySprite3,
 500,
 true
 )
+let snake1 = sprites.create(img`
+    . . . . . c c c c c c c . . . . 
+    . . . . c 6 7 7 7 7 7 6 c . . . 
+    . . . c 7 c 6 6 6 6 c 7 6 c . . 
+    . . c 6 7 6 f 6 6 f 6 7 7 c . . 
+    . . c 7 7 7 7 7 7 7 7 7 7 c . . 
+    . . f 7 8 1 f f 1 6 7 7 7 f . . 
+    . . f 6 f 1 f f 1 f 7 7 7 f . . 
+    . . . f f 2 2 2 2 f 7 7 6 f . . 
+    . . c c f 2 2 2 2 7 7 6 f c . . 
+    . c 7 7 7 7 7 7 7 7 c c 7 7 c . 
+    c 7 1 1 1 7 7 7 7 f c 6 7 7 7 c 
+    f 1 1 1 1 1 7 6 f c c 6 6 6 c c 
+    f 1 1 1 1 1 1 6 6 c 6 6 6 c . . 
+    f 6 1 1 1 1 1 6 6 6 6 6 6 c . . 
+    . f 6 1 1 1 1 1 6 6 6 6 c . . . 
+    . . f f c c c c c c c c . . . . 
+    `, SpriteKind.Enemy)
+tiles.placeOnTile(snake1, tiles.getTileLocation(3, 3))
+snake1.setVelocity(0, 50)
+snake1.setBounceOnWall(true)
+let snake2 = sprites.create(img`
+    . . . . . c c c c c c c . . . . 
+    . . . . c 6 7 7 7 7 7 6 c . . . 
+    . . . c 7 c 6 6 6 6 c 7 6 c . . 
+    . . c 6 7 6 f 6 6 f 6 7 7 c . . 
+    . . c 7 7 7 7 7 7 7 7 7 7 c . . 
+    . . f 7 8 1 f f 1 6 7 7 7 f . . 
+    . . f 6 f 1 f f 1 f 7 7 7 f . . 
+    . . . f f 2 2 2 2 f 7 7 6 f . . 
+    . . c c f 2 2 2 2 7 7 6 f c . . 
+    . c 7 7 7 7 7 7 7 7 c c 7 7 c . 
+    c 7 1 1 1 7 7 7 7 f c 6 7 7 7 c 
+    f 1 1 1 1 1 7 6 f c c 6 6 6 c c 
+    f 1 1 1 1 1 1 6 6 c 6 6 6 c . . 
+    f 6 1 1 1 1 1 6 6 6 6 6 6 c . . 
+    . f 6 1 1 1 1 1 6 6 6 6 c . . . 
+    . . f f c c c c c c c c . . . . 
+    `, SpriteKind.Enemy)
+tiles.placeOnTile(snake2, tiles.getTileLocation(6, 5))
+snake2.setVelocity(0, 50)
+snake2.setBounceOnWall(true)
 info.setLife(3)
 info.startCountdown(10)
