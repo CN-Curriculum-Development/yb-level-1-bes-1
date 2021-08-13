@@ -9,7 +9,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     tiles.placeOnTile(player1, tiles.getTileLocation(1, 1))
 })
 let player1: Sprite = null
-tiles.setTilemap(tilemap`level2`)
+tiles.setTilemap(tilemap`level`)
 game.showLongText("Avoid the moving snakes to get to the coin!", DialogLayout.Center)
 player1 = sprites.create(img`
     . . . . . . f f f f . . . . . . 
