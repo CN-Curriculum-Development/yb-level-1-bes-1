@@ -73,17 +73,6 @@ namespace myTiles {
 2 . 2 . . . 2 2 . 2 
 2 2 2 2 2 2 2 2 2 2 
 `, [myTiles.transparency16,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundSouthWest0,sprites.dungeon.darkGroundNorth,sprites.dungeon.collectibleInsignia,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundCenter,sprites.dungeon.darkGroundNorthEast0,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundSouthEast0], TileScale.Sixteen);
-            case "level":
-            case "level2":return tiles.createTilemap(hex`0a0008000202020202020202020202010101010101010102020102020202020201020201020202020202010202010202020202020102020102020202020201020201010101010101010202020202020202020202`, img`
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-`, [myTiles.transparency16,myTiles.tile3,sprites.dungeon.darkGroundCenter,myTiles.tile19], TileScale.Sixteen);
             case "level4":
             case "level4":return tiles.createTilemap(hex`1000100002020202020202020202000000000000020101010101010101020000000000000201020202020202010200000000000002010202020202020102000000000000020102020202020201020000000000000201020202020202010200000000000002010101010101010102000000000000020202020202020202020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
 . . . . . . . . . . . . . . . . 
@@ -122,6 +111,17 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16], TileScale.Sixteen);
+            case "level":
+            case "level2":return tiles.createTilemap(hex`0a0008000202020202020202020202010101010101010102020102020202020201020201020202020202010202010202020202020102020102020202020201020201010101010101010202020202020202020202`, img`
+2 2 2 2 2 2 2 2 2 2 
+2 . . . . . . . . 2 
+2 . 2 2 2 2 2 2 . 2 
+2 . 2 2 2 2 2 2 . 2 
+2 . 2 2 2 2 2 2 . 2 
+2 . 2 2 2 2 2 2 . 2 
+2 . . . . . . . . 2 
+2 2 2 2 2 2 2 2 2 2 
+`, [myTiles.transparency16,myTiles.tile3,sprites.dungeon.darkGroundCenter], TileScale.Sixteen);
         }
         return null;
     })
