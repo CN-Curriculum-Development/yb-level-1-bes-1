@@ -135,7 +135,7 @@ namespace myTiles {
 2 . . . . . . . . 2 
 2 . . . 2 2 2 2 . 2 
 2 2 2 2 2 2 2 2 2 2 
-`, [myTiles.transparency16,myTiles.tile6,myTiles.tile9,myTiles.tile11,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundNorthEast0,myTiles.tile19,sprites.dungeon.darkGroundNorthWest1,myTiles.tile21,sprites.dungeon.darkGroundSouthWest1,myTiles.tile22,myTiles.tile23,sprites.dungeon.darkGroundNorthEast1,myTiles.tile24,myTiles.tile25,sprites.dungeon.darkGroundSouthEast1,myTiles.tile26,myTiles.tile3], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile6,myTiles.tile9,myTiles.tile11,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundNorthEast0,myTiles.tile19,sprites.dungeon.darkGroundNorthWest1,myTiles.tile21,sprites.dungeon.darkGroundSouthWest1,myTiles.tile22,myTiles.tile23,sprites.dungeon.darkGroundNorthEast1,myTiles.tile24,myTiles.tile25,sprites.dungeon.darkGroundSouthEast1,myTiles.tile26,myTiles.tile2], TileScale.Sixteen);
         }
         return null;
     })
