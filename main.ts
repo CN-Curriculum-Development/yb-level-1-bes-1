@@ -1,8 +1,7 @@
 namespace SpriteKind {
     export const Goal = SpriteKind.create()
 }
-tiles.setTilemap(tilemap`level`)
-game.showLongText("Avoid the bats to get to the coin!", DialogLayout.Center)
+tiles.setTilemap(tilemap`level3`)
 let player1 = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
@@ -32,7 +31,7 @@ let coin = sprites.create(img`
     . . f d d d f . 
     . . . f f f . . 
     `, SpriteKind.Goal)
-let bat1 = sprites.create(img`
+let snake1 = sprites.create(img`
     . . . . . . c c c c c c c . . . 
     . . . . . c f f 6 6 f f 7 c . . 
     . . . . c 7 6 6 6 6 6 6 7 6 c . 
@@ -50,9 +49,9 @@ let bat1 = sprites.create(img`
     . f 6 1 1 1 1 6 6 6 6 6 c . . . 
     . . f f c c c c c c c c . . . . 
     `, SpriteKind.Enemy)
-bat1.setVelocity(0, 50)
-bat1.setBounceOnWall(true)
-let bat2 = sprites.create(img`
+snake1.setVelocity(50, 0)
+snake1.setBounceOnWall(true)
+let snake2 = sprites.create(img`
     . . . . . . c c c c c c c . . . 
     . . . . . c f f 6 6 f f 7 c . . 
     . . . . c 7 6 6 6 6 6 6 7 6 c . 
@@ -70,5 +69,5 @@ let bat2 = sprites.create(img`
     . f 6 1 1 1 1 6 6 6 6 6 c . . . 
     . . f f c c c c c c c c . . . . 
     `, SpriteKind.Enemy)
-bat2.setVelocity(0, 50)
-bat2.setBounceOnWall(true)
+snake2.setVelocity(50, 0)
+snake2.setBounceOnWall(true)

@@ -64,17 +64,6 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, [], -Infinity);
-            case "level3":
-            case "level3":return tiles.createTilemap(hex`0a000800010404040404040404080205070505050507050902050705050505050509020505050707050507090205050507070505050902050705050505050509020507050505070705090306060606060606060a`, img`
-2 2 2 2 2 2 2 2 2 2 
-2 . 2 . . . . 2 . 2 
-2 . 2 . . . . . . 2 
-2 . . . 2 2 . . 2 2 
-2 . . . 2 2 . . . 2 
-2 . 2 . . . . . . 2 
-2 . 2 . . . 2 2 . 2 
-2 2 2 2 2 2 2 2 2 2 
-`, [myTiles.transparency16,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundSouthWest0,sprites.dungeon.darkGroundNorth,sprites.dungeon.collectibleInsignia,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundCenter,sprites.dungeon.darkGroundNorthEast0,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundSouthEast0], TileScale.Sixteen);
             case "level5":
             case "level5":return tiles.createTilemap(hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
 . . . . . . . . . . . . . . . . 
@@ -124,6 +113,17 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16,myTiles.tile3,myTiles.tile19], TileScale.Sixteen);
+            case "level3":
+            case "level3":return tiles.createTilemap(hex`0a0008000101010101010101010101020101010101010201010202020202020202010101010102020101010101010101020201010101010202020202020202010102010101010101020101010101010101010101`, img`
+2 2 2 2 2 2 2 2 2 2 
+2 . 2 2 2 2 2 2 . 2 
+2 . . . . . . . . 2 
+2 2 2 2 . . 2 2 2 2 
+2 2 2 2 . . 2 2 2 2 
+2 . . . . . . . . 2 
+2 . 2 2 2 2 2 2 . 2 
+2 2 2 2 2 2 2 2 2 2 
+`, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,myTiles.tile3], TileScale.Sixteen);
         }
         return null;
     })
