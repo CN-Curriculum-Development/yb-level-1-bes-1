@@ -42,6 +42,18 @@ namespace myTiles {
     export const tile20 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile11 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile21 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile22 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile23 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile24 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile25 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile26 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -114,16 +126,16 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16], TileScale.Sixteen);
             case "level":
-            case "level2":return tiles.createTilemap(hex`0a0008000911011111111101110b120d020d0d0d0d030d0f120d030d0d040d0d0d0f120d0d0d13070d0d0e08120d0d0d06140d0d0d0f120d040d030d0d0d0d0f120d020d0d0d13150d0f0a10051010100c0a100c`, img`
+            case "level2":return tiles.createTilemap(hex`0a0008001306150c0c0c0c130615070e0206151306090b04070e010e10120e0e0e04070e0e0e0e0e0e0e08160d0f0e0311110f0e1015070e0e0e0e0e0e0e0e04070b0e0e0805050a0e0414050505160c0c140516`, img`
 2 2 2 2 2 2 2 2 2 2 
-2 . 2 . . . . 2 . 2 
-2 . 2 . . 2 . . . 2 
-2 . . . 2 2 . . 2 2 
-2 . . . 2 2 . . . 2 
-2 . 2 . 2 . . . . 2 
-2 . 2 . . . 2 2 . 2 
+2 . 2 2 2 2 2 2 . 2 
+2 . 2 . 2 2 . . . 2 
+2 . . . . . . . 2 2 
+2 2 . . . . . . 2 2 
+2 . . . . . . . . 2 
+2 . . . 2 2 2 2 . 2 
 2 2 2 2 2 2 2 2 2 2 
-`, [myTiles.transparency16,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile12,myTiles.tile14,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile20,myTiles.tile11,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundNorthEast0], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile6,myTiles.tile9,myTiles.tile11,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundNorthEast0,myTiles.tile2,myTiles.tile19,myTiles.tile21,myTiles.tile22,myTiles.tile23,myTiles.tile24,myTiles.tile25,myTiles.tile26,sprites.dungeon.darkGroundNorthWest1,sprites.dungeon.darkGroundSouthWest1,sprites.dungeon.darkGroundNorthEast1,sprites.dungeon.darkGroundSouthEast1], TileScale.Sixteen);
         }
         return null;
     })
@@ -154,6 +166,12 @@ namespace myTiles {
             case "tile19":return tile19;
             case "tile20":return tile20;
             case "tile11":return tile11;
+            case "tile21":return tile21;
+            case "tile22":return tile22;
+            case "tile23":return tile23;
+            case "tile24":return tile24;
+            case "tile25":return tile25;
+            case "tile26":return tile26;
         }
         return null;
     })

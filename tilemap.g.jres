@@ -107,6 +107,36 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile21": {
+        "data": "hwQQABAAAADMzMzMzMzMzMzMzMzMzMzMzMy8zMzMzMzMzMzMzMzMzMzMzMzMvMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMvMzMzMzMzMzMzMzMzLzMzMzMzMzMzMzMzMzMzMzMzMzMzLzMzMzMzMzMzMzMzMu8zMzMzMzLu8zMzMzMzMyw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile22": {
+        "data": "hwQQABAAAADd3d3d3d3d3Y2IERERERHRjREREREREdGNERERERER0Y0RERERERHRjREREREREdEdERERERER0R0RERERERHRHREREREREdEdERERERER0R0RERERERHRHREREREREdgdERERERER2B0RERERERHYHRERERGIiNjd3d3d3d3d3Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile23": {
+        "data": "hwQQABAAAAC8zMzMzMzMy7zMzMzMzMzLvMzMzMzMzMu8zMy8zMzMy7zMzMzMzMzLvMzMzMzMzMu8zMzMzMzLy7zMy8zMzMzLvMzMzMzMzMu8zMzMzMzMy7zMzMzMzMzLvMzMzMy8zMu8zMzLzMzMy7zMzMzMzMzLvLu7u7u7u8vMzMzMzMzMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile24": {
+        "data": "hwQQABAAAADMzMzMzMzMzLu7u7u7u7vLzMzMzMzMzMvMzMzMzMzMy8zMzMzLzMzLzMzMzMzMzMvMvMzMzMzMy8zMzMzMzMvLzMzMzMzMzMvMzMzMzMzMy8zMzLzMzMzLzMzMzMzMzMvMzMzMzMzMy8zMzMzMvMzLzLzMzMzMzMvMzMzMzMzMyw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile25": {
+        "data": "hwQQABAAAAC8zMzMzMzMy7zMzMzMzMzLvMzMzMzMzMu8zMzMvMzMy7zMy8zMzMzLvMzMzMzMzMu8zMzMzMzMy7zMzMzMzMzLvMzMzMy8zMu8vMzMzMzMy7zMzMzMzMzLvMzMzMzMzMu8zMzMy8zMy7zMzMzMzMzLvMzMzMzMzMu8zMzMzMzMyw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile26": {
+        "data": "hwQQABAAAADMzMzMzMzMy8zMzMzMzMzLzMzMzMzMzMu8zMzMvMzMy8zMzMzMzMzLzMzMzMzMzMvMzMzMzMzMy8zMvMzMzMzLzMzMzMy8zMvMzMzMzMzMy8zMzMzMzMzLzMvMzMzMzMvMzMzMy8zMy8zMzMzMzMzLu7u7u7u7u8vMzMzMzMzMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
     "level1": {
         "id": "level1",
         "mimeType": "application/mkcd-tilemap",
@@ -156,22 +186,11 @@
     "level2": {
         "id": "level2",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAwYTAwMDgwMDA5MTEwMTExMTExMTExMDExMTBiMTIwZDAyMGQwZDBkMGQwMzBkMGYxMjBkMDMwZDBkMDQwZDBkMGQwZjEyMGQwZDBkMTMwNzBkMGQwZTA4MTIwZDBkMGQwNjE0MGQwZDBkMGYxMjBkMDQwZDAzMGQwZDBkMGQwZjEyMGQwMjBkMGQwZDEzMTUwZDBmMGExMDA1MTAxMDEwMGMwYTEwMGMyMjIyMjIyMjIyMDIwMjAwMjAyMDAyMDIyMDAwMjAwMjAwMjIwMDIyMDIwMDIyMDAyMDAyMDIwMjAwMjAwMjAyMDAyMjIwMjIyMjIyMjIyMg==",
+        "data": "MTAwYTAwMDgwMDEzMDYxNTBjMGMwYzBjMTMwNjE1MDcwZTAyMDYxNTEzMDYwOTBiMDQwNzBlMDEwZTEwMTIwZTBlMGUwNDA3MGUwZTBlMGUwZTBlMGUwODE2MGQwZjBlMDMxMTExMGYwZTEwMTUwNzBlMGUwZTBlMGUwZTBlMGUwNDA3MGIwZTBlMDgwNTA1MGEwZTA0MTQwNTA1MDUxNjBjMGMxNDA1MTYyMjIyMjIyMjIyMDIyMjIyMjIyMDAyMDIyMjAwMjAwMjAwMDAwMDIyMjIwMDAwMDAyMjAyMDAwMDAwMjAwMjAwMjIyMjIwMjIyMjIyMjIyMg==",
         "tileset": [
             "myTiles.transparency16",
-            "myTiles.tile4",
-            "myTiles.tile5",
             "myTiles.tile6",
-            "myTiles.tile7",
-            "myTiles.tile8",
             "myTiles.tile9",
-            "myTiles.tile10",
-            "myTiles.tile12",
-            "myTiles.tile14",
-            "myTiles.tile16",
-            "myTiles.tile17",
-            "myTiles.tile18",
-            "myTiles.tile20",
             "myTiles.tile11",
             "sprites.dungeon.darkGroundWest",
             "sprites.dungeon.darkGroundNorth",
@@ -179,7 +198,19 @@
             "sprites.dungeon.darkGroundEast",
             "sprites.dungeon.darkGroundNorthWest0",
             "sprites.dungeon.darkGroundSouthEast0",
-            "sprites.dungeon.darkGroundNorthEast0"
+            "sprites.dungeon.darkGroundNorthEast0",
+            "myTiles.tile2",
+            "myTiles.tile19",
+            "myTiles.tile21",
+            "myTiles.tile22",
+            "myTiles.tile23",
+            "myTiles.tile24",
+            "myTiles.tile25",
+            "myTiles.tile26",
+            "sprites.dungeon.darkGroundNorthWest1",
+            "sprites.dungeon.darkGroundSouthWest1",
+            "sprites.dungeon.darkGroundNorthEast1",
+            "sprites.dungeon.darkGroundSouthEast1"
         ],
         "displayName": "level"
     },
