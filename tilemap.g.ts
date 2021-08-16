@@ -94,25 +94,6 @@ namespace myTiles {
 2 . 2 . . . 2 2 . 2 
 2 2 2 2 2 2 2 2 2 2 
 `, [myTiles.transparency16,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile12,myTiles.tile14,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile20,myTiles.tile11,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundNorthEast0], TileScale.Sixteen);
-            case "level4":
-            case "level4":return tiles.createTilemap(hex`1000100002020202020202020202000000000000020101010101010101020000000000000201020202020202010200000000000002010202020202020102000000000000020102020202020201020000000000000201020202020202010200000000000002010101010101010102000000000000020202020202020202020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`, [myTiles.transparency16,myTiles.tile3,myTiles.tile19], TileScale.Sixteen);
             case "level3":
             case "level3":return tiles.createTilemap(hex`0a0008000101010101010101010101020101010101010201010202020202020202010101010102020101010101010101020201010101010202020202020202010102010101010101020101010101010101010101`, img`
 2 2 2 2 2 2 2 2 2 2 
@@ -124,6 +105,17 @@ namespace myTiles {
 2 . 2 2 2 2 2 2 . 2 
 2 2 2 2 2 2 2 2 2 2 
 `, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,myTiles.tile3], TileScale.Sixteen);
+            case "level4":
+            case "level4":return tiles.createTilemap(hex`0a0008000202020202020202020202010101010101010102020102020202020201020201020202020202010202010202020202020102020102020202020201020201010101010101010202020202020202020202`, img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+`, [myTiles.transparency16,myTiles.tile3,myTiles.tile19], TileScale.Sixteen);
         }
         return null;
     })
