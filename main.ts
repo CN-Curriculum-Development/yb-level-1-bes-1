@@ -29,7 +29,7 @@ player1 = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-tiles.placeOnTile(player1, tiles.getTileLocation(1, 1))
+tiles.placeOnTile(player1, tiles.getTileLocation(1, 6))
 controller.moveSprite(player1)
 let coin = sprites.create(img`
     . . . b b b . . 
@@ -41,7 +41,7 @@ let coin = sprites.create(img`
     . . f d d d f . 
     . . . f f f . . 
     `, SpriteKind.Goal)
-tiles.placeOnTile(coin, tiles.getTileLocation(8, 6))
+tiles.placeOnTile(coin, tiles.getTileLocation(8, 1))
 animation.runImageAnimation(
 coin,
 [img`
@@ -121,7 +121,7 @@ let snake1 = sprites.create(img`
     . . f f c c c c c c c c . . . . 
     `, SpriteKind.Enemy)
 tiles.placeOnTile(snake1, tiles.getTileLocation(3, 3))
-snake1.setVelocity(0, 50)
+snake1.setVelocity(50, 0)
 snake1.setBounceOnWall(true)
 let snake2 = sprites.create(img`
     . . . . . c c c c c c c . . . . 
@@ -141,8 +141,8 @@ let snake2 = sprites.create(img`
     . f 6 1 1 1 1 1 6 6 6 6 c . . . 
     . . f f c c c c c c c c . . . . 
     `, SpriteKind.Enemy)
-tiles.placeOnTile(snake2, tiles.getTileLocation(6, 5))
-snake2.setVelocity(0, 50)
+tiles.placeOnTile(snake2, tiles.getTileLocation(7, 5))
+snake2.setVelocity(-50, 0)
 snake2.setBounceOnWall(true)
 info.setLife(3)
 info.startCountdown(10)
