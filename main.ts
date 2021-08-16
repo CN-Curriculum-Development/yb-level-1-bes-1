@@ -1,7 +1,7 @@
 namespace SpriteKind {
     export const Goal = SpriteKind.create()
 }
-tiles.setTilemap(tilemap`level`)
+tiles.setTilemap(tilemap`level4`)
 let player1 = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
