@@ -33,42 +33,42 @@ let coin = sprites.create(img`
     . . . f f f . . 
     `, SpriteKind.Goal)
 let bat1 = sprites.create(img`
-    . . f f f . . . . . . . . . . . 
-    f f f c c . . . . . . . . f f f 
-    f f c c c . c c . . . f c b b c 
-    f f c 3 c c 3 c c f f b b b c . 
-    f f c 3 b c 3 b c f b b c c c . 
-    f c b b b b b b c f b c b c c . 
-    c c 1 b b b 1 b c b b c b b c . 
-    c b b b b b b b b b c c c b c . 
-    c b 1 f f 1 c b b c c c c c . . 
-    c f 1 f f 1 f b b b b f c . . . 
-    f f f f f f f b b b b f c . . . 
-    f f 2 2 2 2 f b b b b f c c . . 
-    . f 2 2 2 2 2 b b b c f . . . . 
-    . . f 2 2 2 b b b c f . . . . . 
-    . . . f f f f f f f . . . . . . 
-    . . . . . . . . . . . . . . . . 
+    . . . . . . c c c c c c c . . . 
+    . . . . . c f f 6 6 f f 7 c . . 
+    . . . . c 7 6 6 6 6 6 6 7 6 c . 
+    . . . c 7 7 7 7 7 7 7 7 7 7 c . 
+    . . . c 7 8 1 f f 1 6 7 7 7 c . 
+    . . . f 6 f 1 f f 1 f 7 7 7 f . 
+    . . . f 6 f 2 2 2 2 f 7 7 7 f . 
+    . . c c 6 f 2 2 2 2 f 7 7 6 f . 
+    . c 7 7 7 7 2 2 2 2 7 7 f c . . 
+    c 7 1 1 1 7 7 7 7 7 c c 7 7 c . 
+    f 1 1 1 1 1 7 7 7 f c 6 7 7 7 c 
+    f 1 1 1 1 1 1 6 f c c 6 6 6 c c 
+    f 6 1 1 1 1 1 6 6 c 6 6 6 c . . 
+    f 6 1 1 1 1 1 6 6 6 6 6 6 c . . 
+    . f 6 1 1 1 1 6 6 6 6 6 c . . . 
+    . . f f c c c c c c c c . . . . 
     `, SpriteKind.Enemy)
 bat1.setVelocity(0, 50)
 bat1.setBounceOnWall(true)
 let bat2 = sprites.create(img`
-    . . f f f . . . . . . . . . . . 
-    f f f c c . . . . . . . . f f f 
-    f f c c c . c c . . . f c b b c 
-    f f c 3 c c 3 c c f f b b b c . 
-    f f c 3 b c 3 b c f b b c c c . 
-    f c b b b b b b c f b c b c c . 
-    c c 1 b b b 1 b c b b c b b c . 
-    c b b b b b b b b b c c c b c . 
-    c b 1 f f 1 c b b c c c c c . . 
-    c f 1 f f 1 f b b b b f c . . . 
-    f f f f f f f b b b b f c . . . 
-    f f 2 2 2 2 f b b b b f c c . . 
-    . f 2 2 2 2 2 b b b c f . . . . 
-    . . f 2 2 2 b b b c f . . . . . 
-    . . . f f f f f f f . . . . . . 
-    . . . . . . . . . . . . . . . . 
+    . . . . . . c c c c c c c . . . 
+    . . . . . c f f 6 6 f f 7 c . . 
+    . . . . c 7 6 6 6 6 6 6 7 6 c . 
+    . . . c 7 7 7 7 7 7 7 7 7 7 c . 
+    . . . c 7 8 1 f f 1 6 7 7 7 c . 
+    . . . f 6 f 1 f f 1 f 7 7 7 f . 
+    . . . f 6 f 2 2 2 2 f 7 7 7 f . 
+    . . c c 6 f 2 2 2 2 f 7 7 6 f . 
+    . c 7 7 7 7 2 2 2 2 7 7 f c . . 
+    c 7 1 1 1 7 7 7 7 7 c c 7 7 c . 
+    f 1 1 1 1 1 7 7 7 f c 6 7 7 7 c 
+    f 1 1 1 1 1 1 6 f c c 6 6 6 c c 
+    f 6 1 1 1 1 1 6 6 c 6 6 6 c . . 
+    f 6 1 1 1 1 1 6 6 6 6 6 6 c . . 
+    . f 6 1 1 1 1 6 6 6 6 6 c . . . 
+    . . f f c c c c c c c c . . . . 
     `, SpriteKind.Enemy)
 bat2.setVelocity(0, 50)
 bat2.setBounceOnWall(true)
