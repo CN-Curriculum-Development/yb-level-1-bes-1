@@ -121,7 +121,7 @@ let snake1 = sprites.create(img`
     . . f f c c c c c c c c . . . . 
     `, SpriteKind.Enemy)
 tiles.placeOnTile(snake1, tiles.getTileLocation(3, 3))
-snake1.setVelocity(0, 50)
+snake1.setVelocity(50, 0)
 snake1.setBounceOnWall(true)
 let snake2 = sprites.create(img`
     . . . . . c c c c c c c . . . . 
@@ -141,8 +141,8 @@ let snake2 = sprites.create(img`
     . f 6 1 1 1 1 1 6 6 6 6 c . . . 
     . . f f c c c c c c c c . . . . 
     `, SpriteKind.Enemy)
-tiles.placeOnTile(snake2, tiles.getTileLocation(6, 5))
-snake2.setVelocity(0, 50)
+tiles.placeOnTile(snake2, tiles.getTileLocation(7, 5))
+snake2.setVelocity(-50, 0)
 snake2.setBounceOnWall(true)
 info.setLife(3)
 info.startCountdown(10)
